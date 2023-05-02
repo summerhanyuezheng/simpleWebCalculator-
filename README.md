@@ -1,6 +1,6 @@
 # simpleWebCalculator
 ## description
-the project calculates the sum of two numbers given by user on the website. 
+this project is used to solidify my knowledge on nodeJS, expressJS, npm, nodemon. the project calculates the sum of two numbers given by user on the website. 
 the server runs on Express framework, and it provides sendFile() method allow me to send index.html file.
 
 ## some of the command used and notes for myself
