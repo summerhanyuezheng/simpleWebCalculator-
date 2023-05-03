@@ -17,6 +17,21 @@ app.post("/", function(req, res){
 
     res.send("the result of the calculation is " + result)
 })
+
+app.get("/bmicalculator", function(req, res){
+    res.sendFile(__dirname + "/bmiCalculator.html")
+})
+
+
+app.post("/bmicalculator", function(req, res){
+    var weight = parseFloat(req.body.weight)
+    var height = parseFloat(req.body.height)
+
+    var result = (weight / (height * height))* 703
+
+    res.send("Your BMI is " + result)
+})
+
 app.listen(3000,function(){
     console.log("sever started!")
 })
